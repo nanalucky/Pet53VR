@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1226513782, guid: b8b88e5e805344280bc892c874f7e4f6, type: 3}
+  m_Name: TCMTest
+  m_EditorClassIdentifier: 
+  type: 0
+  savePath: 4173736574732f54434d44656d6f2f54657874757265732f54434d546573742e706e67
+  assetSavePath: 4173736574732f54434d44656d6f2f54657874757265732f54434d546573742e6173736574
+  channels:
+  - pixels: {fileID: 0}
+    invert: 0
+    brightness: 0
+    contrast: 0
+  - pixels: {fileID: 0}
+    invert: 0
+    brightness: 0
+    contrast: 0
+  - pixels: {fileID: 0}
+    invert: 0
+    brightness: 0
+    contrast: 0
+  - pixels: {fileID: 2800000, guid: 78550e40db2ab4fa595a69b4d81d29a1, type: 3}
+    invert: 0
+    brightness: 0
+    contrast: 0
+  - pixels: {fileID: 2800000, guid: 63aaf30409ec04ef99a9716482126e32, type: 3}
+    invert: 0
+    brightness: 0
+    contrast: 0

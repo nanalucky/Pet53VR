@@ -1,0 +1,204 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs36 \cf0 Intro
+\b0\fs24 \
+\
+Thank you for purchasing Imperial Fur! This guide will give you a quick overview of some of the settings. First, a word about the shader names. The names 'metallic' and 'specular' are referring to the PBR method used, not the actual presence of metal or specularity. The number following the name is the amount of shells that are used in creating the fur. Higher values result in better quality, but slower render times. My old computer doesn't really like compiling the 40 pass PBR shaders, so I've zipped them up in case any one else is using older computers. if you want to unzip them, give it a try, but they may take a long time to import.\
+\
+\
+\
+
+\b\fs36 Notes 
+\fs28 \
+ 
+\fs36 \
+
+\fs28 Upgrading
+\fs36 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 Upgrading from version 1 will break materials as things have changed about the way textures are authored. It is also recommended that you delete the previous installation by deleting the "Fur" directory and re-import version 2 before staring to work as the file structure has changed a bit. This document will explain the differences in texture authoring.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs28 \cf0 Player Settings\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 Imperial Fur looks best when rendered in Linear color space, although it will work in Gamma space as well.\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs36 \cf0 Fur Material
+\b0\fs24 \
+\
+
+\b\fs28 Albedo / Diffuse
+\b0\fs24 \
+Under the section 'Fur Properties' you can setup your fur material. The albedo or diffuse texture will determine the look of the fur. The alpha channel will control the opacity of the fur. Lowering the opacity can help give the fur a softer look and help it blend in more with the skin texture. An opacity of 0 (pure black) will mean that the fur isn't rendered at all for that texture coordinate.\
+\
+
+\b\fs28 Noise Map
+\b0\fs24 \
+The noise map controls the distribution of the fur. The strand density slider, mentioned below, can be used to increase the density of the fur. There are several noise maps included with the asset. You can create your own, using those as an example, or you can use the ones provided. If you choose to create your own, be sure to turn off mipmaps and turn the anisotropic filtering up a bit when you import the textures. Otherwise the detail of the noise will get lost and it will not have the desired effect. One particularly noticeable affect of not doing this is that the fur will suddenly become much shorter than expect as the black and white pixels of the noise map are blurred together into a gray.\
+\
+
+\b\fs28 Control Map
+\b0\fs24 \
+The control map holds three separate maps. The height map goes in the red channel, the stiffness map goes in the green channel, and the bias map goes in the blue channel. The included utility, Texture Channel Manager, can assist you in making the control texture from three separate input files so you don't have to do it within your image editing software. The documentation and an example scene for Texture Channel Manager can be found in the TCMDemo folder. The three map types in the control texture are explained below.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 Height Map\
+
+\b0 The height map controls the height of the fur at a given texture coordinate. A white value will mean that the fur is as long as the max strand length is set to, and a black value will mean no fur at all.\
+\
+
+\b Stiffness Map\
+
+\b0 The stiffness map controls how much the physics simulation affects the fur. This map works on a per vertex basis, so its effect depends on the tessellation of your model and doesn't allow for super fine grained control. A value of white will allow the fur to move as if no map were used at all. A value of black will stop the fur from responding to the physics at all. Greyscale values are used for the in between.\
+\
+
+\b Bias Map\
+
+\b0 The bias map also works on a per vertex basis. It will move the skin in before growing the fur out. This is useful if your model has the fur modeled in already by preventing the model from getting fatter than it should. A value of white leaves the skin as it, and a value of black will move the skin in by the amount of the max strand length. For most complex models, you'll need to paint differing values into this map for different parts of the mesh.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs28 \cf0 Specular/Metallness
+\b0\fs24 \
+The specularity and metalness settings depend upon the shader you are using, and match up with the Unity standard shader definition for those terms.\
+\
+
+\b\fs28 Strand Density
+\b0\fs24 \
+This setting will essentially tile the UV coordinates of the noise texture to pack more fur into a smaller space.\
+\
+
+\b\fs28 Max Strand Length
+\b0\fs24 \
+This should go without saying, but this setting sets the maximum length that a strand can be. Be careful going too high or the fur effect will be lost and the shells will become apparent.\
+\
+
+\b\fs28 Edge Fade
+\b0\fs24 \
+This setting will fade out the edges of the fur to help it blend in with the background more.\
+\
+\
+\
+
+\b\fs36 Skin Material
+\b0\fs24 \
+\
+Imperial Fur differs from other fur shaders in that it allows you to assign a separate material for the skin underneath the fur. The Heightmap demo and Tips demo will show you how making use of this can improve your object.\
+\
+
+\b\fs28 Albedo / Diffuse
+\b0\fs24 \
+The skin material setup is just like the Unity shader that matches it except for the use of the alpha channel in the albedo / diffuse texture. The alpha channel will change the opacity of the fur that is on top of the skin. So setting the alpha to a low value (dark grey) will result in a peach fuzz type of look. I've found that it almost always looks best to set the alpha pretty low. The Physics demo scene has most of the alpha values set to around 30%\
+\
+
+\b\fs28 Intra-fur Shadows 
+\b0\fs24 \
+The slider labeled "Shadow Strength" will adjust the strength of the shadow that occurs between strands of fur. Turning it all the way up will result in a darker shadow, and all the way down will result in nearly no shadowing. \
+\
+
+\b\fs28 Rim Light
+\b0\fs24 \
+There are three options for rim lighting. You can choose to color the rim light the same color as the diffuse texture by choosing the "Natural" setting. You can also choose to set it the same color as the ambient light, or to a user controlled color.\
+\
+\
+\
+
+\b\fs36 Simple Shaders
+\b0\fs24 \
+\
+The simple shaders are much faster than the normal shaders. Most of the settings are the same except for a few. The simple shaders don't have an option in the shader to turn the skin material on or off. That is done by selecting either the 'no skin' shader for no skin, or one of the other ones if you want skin. \
+\
+For the skinned simple shaders, the skin is drawn using Unity standard shaders using these same setup as above. Non-skinned shaders will draw the fur texture using the Blinn lighting model, which is similar to the lighting on the fur with these shaders.\
+\
+
+\b\fs28 Reflection Mode
+\b0\fs24 \
+\
+Since the simple shaders aren't using surface shaders, you'll need to add your own reflection probe if you want to use one. Please note that the reflection settings only apply to the fur. If you want reflections on the skin, use one of the PBR shaders for the skin.\
+\
+The reflection settings take a cube map. You have the option of choosing between and HDR and LDR cube map. The easiest way to create a cub map is to temporarily set your Unity Reflection Probe to "Custom" and hit the bake button. It will ask for a location to save the cube map. After saving the map, you can put your reflection probe back to whatever you want it to be and assign the saved cube map to the fur shader.\
+\
+\
+
+\b\fs36 Physics Script
+\b0\fs24 \
+\
+The physics script can be added to the game object that the fur shader is assigned to in order to have the fur react to the physics in the game. There are several settings that need to be discussed. \
+\
+
+\b\fs28 Use Rigidbody
+\b0\fs24 \
+If you have a rigid body attached to your object, leave this checked. It will use the rigid body's calculations of the velocity and save a few steps. If your game object is not controlled by a rigid body, uncheck this and the script will calculate the velocity between frames manually.\
+\
+
+\b\fs28 Use Physics Gravity
+\b0\fs24 \
+If this is checked, the gravity value defined in your Unity physics setup will be applied to the fur. If you don't want gravity to effect the fur, or want to use your own gravity value, uncheck this.\
+\
+
+\b\fs28 Physics Enabled
+\b0\fs24 \
+Turning this off will stop the fur from reacting to movement. This may be useful if you want to use the wind effect, but don't need the extra physics calculations.\
+\
+
+\b\fs28 Wind Enabled
+\b0\fs24 \
+This determines whether or not the wind effect is added to the physics calculations. If the wind is enabled, then the WindController prefab must be added to your scene.\
+\
+
+\b\fs28 Additional Gravity
+\b0\fs24 \
+This vector will define and additional amount of gravity that is added to the fur. If you have the physics gravity disabled, then this vector will be the only gravity applied to the fur.\
+\
+
+\b\fs28 Force / Gravity Scale
+\b0\fs24 \
+These determine how much of the calculated force or gravity is applied to the fur.\
+\
+
+\b\fs28 Force Damping
+\b0\fs24 \
+This determines how much the changes in force are smoothed. Higher values will result in quicker changes. Lower ones will result in smoother changes.\
+\
+\
+\
+
+\b\fs36 WindController Prefab\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 This must be added to any scene that contains an object with 'Wind Enabled' turned on in its physics script. It is a separate prefab so that all objects that are wind enabled will receive the same values. There are a few settings that can be adjusted in the script attached to the prefab.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b\fs28 \cf0 Wind Damping
+\b0\fs24 \
+These determine how much the changes wind are smoothed. Higher values will result in quicker changes. Lower ones will result in smoother changes.\
+\
+
+\b\fs28 Min / Max Wind Force
+\b0\fs24 \
+These determine the maximum and minimum values that the randomized wind can fall between. It may be important to note that with gravity and other forces on, this setting will need to be higher in order for you to see the effect of the wind.\
+\
+\
+\
+
+\b\fs36 LOD Script\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0\fs24 \cf0 \
+The included LOD script is used to switch from higher shell shaders to lower shell shaders as the object gets further from the camera. The settings allow you to adjust the distance that the change is made for each reduction. There are no default values provided because the optimal distance is going to depend on a number of factors. Experimentation to provide the best results is necessary.\
+\
+To use the script, simply attach it to the game object that you want it to control and fill in the values for the distances. You will also need to force Unity to include the 40, 20, 10, 5, 2, and 1 shell shaders for the shader type that you want to use. Not doing this will work in the editor, but fail in the build. The easiest way to do this is to go to the Edit->Project Settings->Graphics dialog and add the necessary shaders to the "Always included shaders" array. You can find the required shaders in the appropriate subdirectory of the Imperial Fur folder. Main shaders are under the Shaders folder and simple shaders are under the SimpleShaders folder. They are named similarly to how they are in the menu. So the Main Specular 40 shell shader is under the Shaders folder and named Specular40. The Simple Blinn 20 shell shader is under the SimpleShaders folder and named Blinn20S. If you are using the Specular shader, include Specular40 all the way down to Specular1.  Be sure to test it in an actual build to be sure that you have done it correctly.}

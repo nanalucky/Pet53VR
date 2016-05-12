@@ -1,0 +1,34 @@
+Using Texture Channel Manager is easy. Since the asset works on older versions of Unity, the demo scene uses a Diffuse Specular shader. The same process would work the same with PBR Materials.
+
+
+Playing with the demo:
+
+You can skip the section if you want to get right to using Texture Channel Manager in your own projects. In the TCMTextures folder, you'll find the source images that I use to make up the scene. Since it is a Diffuse Specular shader, there is a Base texture and a Gloss texture. These are the two files that you would normally combine in your image editor. They will not be included in your build (unless you add them to a material somewhere else). If you open either of these in your image editor and make changes to them, TCM will notice and recombine them into a new final output file. The changes will apply immediately to the sphere, just as they would if you modified the material texture directly.
+
+The final output from Texture Channel Manager is in the Textures folder. You shouldn't modify these files directly. TCM will take care of that for you. There are two files in the demo. One is the output PNG and the other is an asset that TCM creates along side it to manage it. If you click on the asset (The one with the remote control), you'll see a button in the inspector to open it in TCM. When the window opens, you can play around with the image settings and hit save. TCM will output the new file and it will be applied to the sphere. 
+
+
+Step 1: Importing the base textures
+
+Add your base images to your Unity project like you would any other image. But make sure you go to their import settings and set the to Read/Write enabled. That option is in the 'Advanced' texture type settings. You can also turn of mip maps since they will not be used. 
+
+Since the images will not be included in your build, you can turn off compression if you'd like to get the best quality input. You can set them to any size you'd like, but larger images require longer processing times so it's best to set the size to whatever size you'll be using in the final product. 
+
+
+Step 2: Creating the final output
+
+From the Window menu in the Unity menu bar, find Imperial Penguin and select Texture Channel Manager from the submenu. The Texture Channel Manager dialog will pop up. A drop down box will give you the option of RGB+A for shaders where the RGB channels represent one map and the alpha represents another, or R+G+B+A for shaders where each channel represents a separate map. 
+
+Except for the combined RGB channel in the RGB+A mode, a drop down menu will show allowing you to select which channel of the source image you'd like to use. By default it will take a grayscale composite of the RGB channels. Changing this can be useful if you'd like to swap channels around or work with an image that has already been split into different maps. 
+
+Drag your source images to the appropriate slot in TCM and hit the Save button. You will be prompted for a save location. Enter the name that you want the texture to be used in your game to be called and save the file. As mentioned above, TCM will save two files. One is the image that you will assign to your model. The other is a control asset that TCM uses to keep that image up to date. Clicking on the asset will give you the option to open it in TCM to edit it. A Force Update button is also there in case something goes wrong and TCM doesn't update the file.
+
+Step 3: Modifying the texture
+
+You shouldn't modify TCM's output at all. It will handle all of the work of making sure that the output matches the changes you make to the base textures. When you want to make changes to the images, make those changes to the images that you fed TCM to create it. When you edit one of those images in your image editor and Unity re-imports them, TCM will pick up on the import and automatically create a new output file from them, using the settings you chose in the TCM Window. 
+
+For basic adjustments, such as adjusting the contrast or brightness of a gloss map, you can open the TCM window for the image (using the inspector of the control asset mentioned above) and adjust the values right within the TCM window. When you hit save, a new final output file will be created with those values and applied to any materials that that file is assigned to.
+
+Step 4: Enjoy!
+
+Okay, so there is no step 4. I told you it was simple to use. 
