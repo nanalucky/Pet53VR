@@ -29,6 +29,7 @@ public class BallDogControllerVR : MonoBehaviour {
 	private float timeEndPlay;
 	private float velY;
 	private float mouthDistance;
+    private float ballRadius;
 
 	[HideInInspector]
 	public Vector3 dogDestPosition;
@@ -42,6 +43,7 @@ public class BallDogControllerVR : MonoBehaviour {
 		goMouth = GameObject.FindGameObjectWithTag ("Mouth");
 		//goDest = GameObject.Find ("DogPosInteract");
 		lookatIK = goDog.GetComponent<LookAtIK> ();
+        ballRadius = goBall.GetComponent<SphereCollider>().radius;
 
 		state = State.Look;
 		goDog.GetComponent<DogController> ().EnableLookatIK (true);
@@ -60,7 +62,7 @@ public class BallDogControllerVR : MonoBehaviour {
 		switch (state) {
 		case State.Look:
 			lookatIK.solver.IKPosition = goBall.transform.position;
-			if(goBall.transform.position.y < 0.05f)
+			if(goBall.transform.position.y < 0.05f + ballRadius)
 			{
 				goDog.GetComponent<DogController> ().EnableLookatIK (false);
 				state = State.Chase;

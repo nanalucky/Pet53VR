@@ -64,10 +64,10 @@ public class NoTouchGUI2 : MonoBehaviour {
 		
 		goDog = GameObject.FindGameObjectWithTag ("dog");
 
-		speechPlugin = SpeechPlugin.GetInstance();
-		speechPlugin.SetDebug(0);
-		speechPlugin.setSpeechEventListener(onReadyForSpeech,onBeginningOfSpeech,onEndOfSpeech,onError,onResults);
-	}
+        speechPlugin = SpeechPlugin.GetInstance();
+        speechPlugin.SetDebug(0);
+        speechPlugin.setSpeechEventListener(onReadyForSpeech, onBeginningOfSpeech, onEndOfSpeech, onError, onResults);
+    }
 
 	void Update()
 	{
@@ -123,8 +123,6 @@ public class NoTouchGUI2 : MonoBehaviour {
 			toast.ShowToastMessage("本手机不支持语音识别");
 			Debug.Log("Speech Recognizer not supported by this Android device ");
 		}
-
-
 	}
 	
 	private void OnDestroy(){

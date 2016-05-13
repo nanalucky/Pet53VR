@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11408866}
   - 114: {fileID: 11408864}
   - 114: {fileID: 11410684}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: RobotScript
   m_TagString: RobotScript
   m_Icon: {fileID: 0}
@@ -55,8 +55,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 061667a5d2966254f973cd6663b6d505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDistance: .899999976
-  maxDistance: .899999976
+  minDistance: 0.9
+  maxDistance: 0.9
   speedEulerX: 1
 --- !u!114 &11408868
 MonoBehaviour:
@@ -72,7 +72,7 @@ MonoBehaviour:
   eulerX: 15
   eulerXSpeed: 50
   distances:
-  - .899999976
+  - 0.9
   - 2
   distanceSpeed: 2
   lookatSpeed: 2
@@ -111,4 +111,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 108864}
   m_IsPrefabParent: 1
-  m_IsExploded: 1

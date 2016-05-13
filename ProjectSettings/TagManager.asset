@@ -3,7 +3,28 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - dog
+  - Ball
+  - BallPlay
+  - EnterInteract
+  - Interact
+  - Mouth
+  - RobotScript
+  - Record_Predict
+  - EnterBall
+  - EnterExercise
+  - Exercise
+  - Gesture
+  - EnterOrder
+  - Order
+  - Word
+  - New Tag
+  - Record
+  - NoTouchButton
+  - New Tag
+  - New Tag
+  - NoTouchGUI
   layers:
   - Default
   - TransparentFX
@@ -13,7 +34,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - role
   - 
   - 
   - 
