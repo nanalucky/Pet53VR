@@ -224,7 +224,7 @@ Material:
       data:
         first:
           name: _RimLightMode
-        second: 1
+        second: 0
       data:
         first:
           name: _ShadowMode
@@ -285,7 +285,7 @@ Material:
       data:
         first:
           name: _RimColor
-        second: {r: 0, g: 0, b: 1, a: 0}
+        second: {r: 0.22185223, g: 0.22221018, b: 0.2205882, a: 0}
       data:
         first:
           name: _FurSpecularColor
@@ -293,4 +293,4 @@ Material:
       data:
         first:
           name: _SpecularColor
-        second: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 1}
