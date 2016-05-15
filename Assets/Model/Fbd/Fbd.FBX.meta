@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 3e6b1253a47841a46a16accac9850bdd
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: bd
     100002: Bip01
@@ -205,12 +205,17 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleRotations: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 0
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations:
@@ -224,6 +229,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -377,6 +383,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Idle2
       takeName: Take 001
@@ -387,6 +394,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -400,7 +408,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .231734723
+      - time: 0.23173472
         functionName: PlayAudioEffect
         data: talk2
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -408,7 +416,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .327004194
+      - time: 0.3270042
         functionName: PlayAudioEffect
         data: talk2
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -556,16 +564,18 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: WalkWithSmallShake
       takeName: Take 001
-      firstFrame: 1969.99988
-      lastFrame: 1985.99988
+      firstFrame: 1969.9999
+      lastFrame: 1985.9999
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -719,6 +729,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Run
       takeName: Take 001
@@ -729,6 +740,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -742,7 +754,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .160493568
+      - time: 0.16049357
         functionName: PlayAudioEffect
         data: walk,0.1
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -750,7 +762,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .555555284
+      - time: 0.5555553
         functionName: PlayAudioEffect
         data: walk,0.1
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -898,6 +910,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: SitDown
       takeName: Take 001
@@ -908,6 +921,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1061,6 +1075,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: SitIdle
       takeName: Take 001
@@ -1071,6 +1086,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -1224,6 +1240,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Fall
       takeName: Take 001
@@ -1234,6 +1251,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1387,6 +1405,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: FallIdle
       takeName: Take 001
@@ -1397,6 +1416,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -1550,6 +1570,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Sleep
       takeName: Take 001
@@ -1560,6 +1581,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -1713,6 +1735,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: SleepIdle
       takeName: Take 001
@@ -1723,6 +1746,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -1876,6 +1900,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Wake
       takeName: Take 001
@@ -1886,6 +1911,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -2039,6 +2065,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: FallToSit
       takeName: Take 001
@@ -2049,6 +2076,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -2202,6 +2230,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: SitToStand
       takeName: Take 001
@@ -2212,6 +2241,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -2365,6 +2395,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Sniffer
       takeName: Take 001
@@ -2375,6 +2406,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -2528,6 +2560,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TurnRightStart
       takeName: Take 001
@@ -2538,6 +2571,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -2691,6 +2725,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TurnRight
       takeName: Take 001
@@ -2701,6 +2736,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -2854,6 +2890,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Rush
       takeName: Take 001
@@ -2864,6 +2901,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -3017,6 +3055,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: PlayBall
       takeName: Take 001
@@ -3027,6 +3066,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -3180,6 +3220,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: RushToStand
       takeName: Take 001
@@ -3190,6 +3231,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -3343,6 +3385,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TouchHead
       takeName: Take 001
@@ -3353,6 +3396,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -3366,7 +3410,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .194092765
+      - time: 0.19409277
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -3374,7 +3418,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .662447691
+      - time: 0.6624477
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -3522,6 +3566,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TouchBack
       takeName: Take 001
@@ -3532,6 +3577,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -3545,7 +3591,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .177215368
+      - time: 0.17721537
         functionName: PlayAudioEffect
         data: touchback
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -3553,7 +3599,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .660337627
+      - time: 0.6603376
         functionName: PlayAudioEffect
         data: touchback
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -3701,6 +3747,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: RightRawUp
       takeName: Take 001
@@ -3711,6 +3758,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -3864,6 +3912,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: LeftRawUp
       takeName: Take 001
@@ -3874,6 +3923,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -4027,6 +4077,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Stand
       takeName: Take 001
@@ -4037,6 +4088,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -4190,6 +4242,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TongueOut
       takeName: Take 001
@@ -4200,6 +4253,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -4357,6 +4411,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TongueIdle
       takeName: Take 001
@@ -4367,6 +4422,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -4520,6 +4576,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TongueIn
       takeName: Take 001
@@ -4530,6 +4587,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -4683,6 +4741,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Blink
       takeName: Take 001
@@ -4693,6 +4752,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -4846,6 +4906,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: EyeClose
       takeName: Take 001
@@ -4856,6 +4917,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -5009,6 +5071,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: EyeOpen
       takeName: Take 001
@@ -5019,6 +5082,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -5172,6 +5236,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TouchHeadHead
       takeName: Take 001
@@ -5182,6 +5247,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -5195,7 +5261,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .0787744075
+      - time: 0.07877441
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -5203,7 +5269,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .326039732
+      - time: 0.32603973
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -5211,7 +5277,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .562362969
+      - time: 0.56236297
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -5219,7 +5285,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .859863579
+      - time: 0.8598636
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -5367,6 +5433,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TouchBackHead
       takeName: Take 001
@@ -5377,6 +5444,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -5390,7 +5458,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .0940918326
+      - time: 0.09409183
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -5398,7 +5466,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .329236537
+      - time: 0.32923654
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -5406,7 +5474,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .645560861
+      - time: 0.64556086
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -5414,7 +5482,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .888284624
+      - time: 0.8882846
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -5562,6 +5630,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TurnLeftStart
       takeName: Take 001
@@ -5572,6 +5641,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -5725,6 +5795,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TurnLeft
       takeName: Take 001
@@ -5735,6 +5806,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -5888,6 +5960,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Ear
       takeName: Take 001
@@ -5898,6 +5971,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -6055,6 +6129,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: WalkHead
       takeName: Take 001
@@ -6065,6 +6140,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -6222,16 +6298,18 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Idle3
       takeName: Take 001
       firstFrame: 1660
-      lastFrame: 1945.00012
+      lastFrame: 1945.0001
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -6245,7 +6323,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .0316455103
+      - time: 0.03164551
         functionName: PlayAudioEffect
         data: talk2
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -6253,7 +6331,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .405063272
+      - time: 0.40506327
         functionName: PlayAudioEffect
         data: sniffer,0.1
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -6261,7 +6339,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .831223786
+      - time: 0.8312238
         functionName: PlayAudioEffect
         data: talk2
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -6413,6 +6491,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: WalkWithLargeShake
       takeName: Take 001
@@ -6423,6 +6502,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -6580,6 +6660,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: EyeHalf
       takeName: Take 001
@@ -6590,6 +6671,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -6747,6 +6829,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: EyeBallBlink
       takeName: Take 001
@@ -6757,6 +6840,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -6914,6 +6998,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: EyeBallClose
       takeName: Take 001
@@ -6924,6 +7009,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -7081,6 +7167,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: EyeBallOpen
       takeName: Take 001
@@ -7091,6 +7178,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -7248,6 +7336,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: EyeBallHalf
       takeName: Take 001
@@ -7258,6 +7347,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -7415,16 +7505,18 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: StandWithNoShake
       takeName: Take 001
-      firstFrame: 1999.99988
+      firstFrame: 1999.9999
       lastFrame: 2040
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -7582,6 +7674,7 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TouchHeadHeadForSit
       takeName: Take 001
@@ -7592,6 +7685,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -7605,7 +7699,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .0792684779
+      - time: 0.07926848
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -7613,7 +7707,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .321827948
+      - time: 0.32182795
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -7621,7 +7715,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .560174704
+      - time: 0.5601747
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -7629,7 +7723,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .859956324
+      - time: 0.8599563
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -7781,6 +7875,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TouchBackHeadForSit
       takeName: Take 001
@@ -7791,6 +7886,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -7804,7 +7900,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .0966553763
+      - time: 0.096655376
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -7812,7 +7908,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .328227997
+      - time: 0.328228
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -7820,7 +7916,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .652078629
+      - time: 0.6520786
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -7828,7 +7924,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .890591204
+      - time: 0.8905912
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -7980,6 +8076,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TouchHeadHead2
       takeName: Take 001
@@ -7990,6 +8087,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -8003,7 +8101,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .0802916139
+      - time: 0.080291614
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -8011,7 +8109,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .326642305
+      - time: 0.3266423
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -8019,7 +8117,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .565693021
+      - time: 0.565693
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -8027,7 +8125,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .868613064
+      - time: 0.86861306
         functionName: PlayAudioEffect
         data: touchhead
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -8179,6 +8277,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: TouchBackHead2
       takeName: Take 001
@@ -8189,6 +8288,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -8202,7 +8302,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: .0948905349
+      - time: 0.094890535
         functionName: PlayAudioEffect
         data: touchback
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -8210,7 +8310,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .332116872
+      - time: 0.33211687
         functionName: PlayAudioEffect
         data: touchback
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -8218,7 +8318,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .645985186
+      - time: 0.6459852
         functionName: PlayAudioEffect
         data: touchback
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -8226,7 +8326,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: .890511096
+      - time: 0.8905111
         functionName: PlayAudioEffect
         data: touchback
         objectReferenceParameter: {fileID: 11500000, guid: e37c0cbc92f862b46bf55ad46015c647,
@@ -8378,16 +8478,18 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: EyeCloseIdle
       takeName: Take 001
       firstFrame: 954
-      lastFrame: 954.099976
+      lastFrame: 954.1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -8545,6 +8647,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Interact
       takeName: Take 001
@@ -8555,6 +8658,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 1
@@ -8712,41 +8816,47 @@ ModelImporter:
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
+  humanoidOversampling: 1
   additionalBone: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

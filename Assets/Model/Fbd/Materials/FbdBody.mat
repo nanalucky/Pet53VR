@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: FbdBody
-  m_Shader: {fileID: 4800000, guid: ff8910b41f8a749458a5cebab0f57f49, type: 3}
+  m_Shader: {fileID: 4800000, guid: 5f4ab4064aaac44e5813a5950f1fb088, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: 3000
@@ -80,6 +80,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _NoiseTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _SpecGlossMap
         second:
           m_Texture: {fileID: 0}
@@ -88,13 +95,6 @@ Material:
       data:
         first:
           name: _Cube
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _NoiseTex
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -117,7 +117,7 @@ Material:
         first:
           name: _SkinTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 7c241bfaa31db5c459a639017048be75, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -151,7 +151,7 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: 0.45
+        second: 0
       data:
         first:
           name: _BumpScale
@@ -178,12 +178,12 @@ Material:
         second: 0
       data:
         first:
-          name: _ShadowStrength
-        second: 0.2
-      data:
-        first:
           name: _EdgeFade
         second: 0.91
+      data:
+        first:
+          name: _ShadowStrength
+        second: 0.2
       data:
         first:
           name: _FurGlossiness
@@ -195,7 +195,7 @@ Material:
       data:
         first:
           name: _MaxHairLength
-        second: 0.016
+        second: 0.009
       data:
         first:
           name: _ShadowWeakness
@@ -280,4 +280,4 @@ Material:
       data:
         first:
           name: _SpecularColor
-        second: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 1}

@@ -2,14 +2,16 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 3
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Fbd
-  m_Shader: {fileID: 4800000, guid: 3d1b93e00c5cb70459080f6bfca1690d, type: 3}
-  m_ShaderKeywords: []
-  m_CustomRenderQueue: -1
+  m_Shader: {fileID: 4800000, guid: 4a74c11828f794ad493a32a8c27cfa2f, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -17,7 +19,63 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 677ce5fb30174ad4aa1cf09522c5e0a7, type: 3}
+          m_Texture: {fileID: 2800000, guid: 7c241bfaa31db5c459a639017048be75, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailNormalMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ParallaxMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailMask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailAlbedoMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MetallicGlossMap
+        second:
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -27,40 +85,187 @@ Material:
           m_Texture: {fileID: 2800000, guid: 671a243e82750c64a9e51b6be0639720, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ControlTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _FurBumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SkinTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 677ce5fb30174ad4aa1cf09522c5e0a7, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _FurSpecularMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
+          name: _SrcBlend
+        second: 1
+      data:
+        first:
+          name: _DstBlend
+        second: 0
+      data:
+        first:
+          name: _Cutoff
+        second: 0.5
+      data:
+        first:
           name: _Shininess
-        second: 5.16207886
+        second: 5.162079
+      data:
+        first:
+          name: _Parallax
+        second: 0.02
+      data:
+        first:
+          name: _ZWrite
+        second: 1
+      data:
+        first:
+          name: _Glossiness
+        second: 0
+      data:
+        first:
+          name: _BumpScale
+        second: 1
+      data:
+        first:
+          name: _OcclusionStrength
+        second: 1
+      data:
+        first:
+          name: _DetailNormalMapScale
+        second: 1
+      data:
+        first:
+          name: _UVSec
+        second: 0
+      data:
+        first:
+          name: _Mode
+        second: 0
+      data:
+        first:
+          name: _Metallic
+        second: 0
       data:
         first:
           name: _FurLength
-        second: .00649999967
+        second: 0.0064999997
       data:
         first:
           name: _EdgeFade
-        second: .732142806
+        second: 0.91
       data:
         first:
           name: _HairHardness
-        second: .839285731
+        second: 0.83928573
       data:
         first:
           name: _HairThinness
-        second: 6.43214321
+        second: 6.432143
       data:
         first:
           name: _HairShading
-        second: .124999993
+        second: 0.12499999
       data:
         first:
           name: _SkinAlpha
-        second: .517857134
+        second: 0.51785713
+      data:
+        first:
+          name: _ShadowStrength
+        second: 0.2
+      data:
+        first:
+          name: _FurGlossiness
+        second: 0
+      data:
+        first:
+          name: _StrandThickness
+        second: 10
+      data:
+        first:
+          name: _MaxHairLength
+        second: 0.009
+      data:
+        first:
+          name: _ShadowWeakness
+        second: 0.75
+      data:
+        first:
+          name: _RimPower
+        second: 8
+      data:
+        first:
+          name: _RimLightMode
+        second: 1
+      data:
+        first:
+          name: _ShadowMode
+        second: 0
+      data:
+        first:
+          name: _SkinMode
+        second: 1
+      data:
+        first:
+          name: _UseFurSecondMap
+        second: 0
+      data:
+        first:
+          name: _UseHeightMap
+        second: 0
+      data:
+        first:
+          name: _UseBiasMap
+        second: 0
+      data:
+        first:
+          name: _UseSkinSecondMap
+        second: 0
+      data:
+        first:
+          name: _UseStrengthMap
+        second: 0
+      data:
+        first:
+          name: _FurBumpScale
+        second: 1
     m_Colors:
       data:
         first:
+          name: _EmissionColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
           name: _Color
-        second: {r: .977941155, g: .963559687, b: .963559687, a: 0}
+        second: {r: 1, g: 1, b: 1, a: 0}
       data:
         first:
           name: _SpecColor
@@ -73,3 +278,19 @@ Material:
         first:
           name: _ForceLocal
         second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _FurColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _RimColor
+        second: {r: 0, g: 0, b: 1, a: 0}
+      data:
+        first:
+          name: _FurSpecularColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _SpecularColor
+        second: {r: 0.2, g: 0.2, b: 0.2, a: 1}
